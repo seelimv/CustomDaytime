@@ -35,10 +35,7 @@ dependencies {
 
 tasks {
   runServer {
-    // Configure the Minecraft version for our task.
-    // This is the only required configuration besides applying the plugin.
-    // Your plugin's jar (or shadowJar if present) will be used automatically.
-    minecraftVersion("26.1.2")
+    minecraftVersion("26.3")
   }
 }
 
@@ -96,7 +93,7 @@ modrinth {
     versionNumber.set(version.toString())
     versionType.set("release")
     uploadFile.set(tasks.shadowJar)
-    gameVersions.addAll("26.1", "26.1.1", "26.1.2")
+    gameVersions.addAll("26.3")
     loaders.addAll("paper", "folia", "purpur")
     syncBodyFrom = rootProject.file("README.md").readText()
     changelog.set(System.getenv("CHANGELOG").takeUnless { it.isNullOrBlank() } ?: "No changelog provided")
@@ -110,7 +107,6 @@ paper {
     name = "CustomDaytime"
     author = "Seedim"
     main = "xyz.mayahive.customdaytime.paper.CustomDaytimePaper"
-    apiVersion = "26.1.2"
+    apiVersion = "26.3"
     foliaSupported = true
-    contributors = listOf("PureLove")
 }

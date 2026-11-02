@@ -1,12 +1,12 @@
 [versions]
 # --- Platform Depencies ---
-paper = "26.1.2.build.+"
+paper = "26.3.build.+"
 run-paper = "3.0.2"
 plugin-yml = "0.9.0"
-spongegradle = "2.3.1-SNAPSHOT"
-spongevanilla = "0.2.2-SNAPSHOT"
-sponge-api = "18.0.0-SNAPSHOT"
-spongeminecraft = "1.21.11"
+spongegradle = "2.5.1"
+spongevanilla = "0.3.2"
+sponge-api = "21.0.0-SNAPSHOT"
+spongeminecraft = "26.3"
 
 # --- General Java Utilities ---
 lombok = "1.18.42"

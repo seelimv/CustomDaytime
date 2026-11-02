@@ -45,8 +45,8 @@ sponge {
         entrypoint("xyz.mayahive.customdaytime.sponge.CustomDaytimeSponge")
         description("Customise Minecraft's day-night-cycle")
         links {
-            source("https://github.com/SeedimV/CustomDaytime/")
-            issues("https://github.com/SeedimV/CustomDaytime/issues")
+            source("https://github.com/seelimv/CustomDaytime/")
+            issues("https://github.com/seelimv/CustomDaytime/issues")
         }
         contributor("Seedim") {
             description("Author")
@@ -58,7 +58,7 @@ sponge {
     }
 }
 
-val javaTarget = 21 // Sponge targets a minimum of Java 21
+val javaTarget = 25
 java {
     toolchain.languageVersion.set(JavaLanguageVersion.of(javaTarget))
 }
@@ -72,7 +72,6 @@ tasks.withType<JavaCompile>().configureEach {
     }
 }
 
-// Make sure all tasks which produce archives (jar, sources jar, javadoc jar, etc) produce more consistent output
 tasks.withType<AbstractArchiveTask>().configureEach {
     isReproducibleFileOrder = true
     isPreserveFileTimestamps = false

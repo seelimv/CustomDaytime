@@ -19,7 +19,7 @@ plugins {
     id("java")
 }
 
-val javaTarget = 21 // Sponge targets a minimum of Java 21
+val javaTarget = 25
 java {
     toolchain.languageVersion.set(JavaLanguageVersion.of(javaTarget))
 }
